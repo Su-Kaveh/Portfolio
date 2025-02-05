@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Épreuve 5</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(link => {
+                link.addEventListener("mouseover", () => {
+                    link.style.opacity = "0.6";
+                });
+                link.addEventListener("mouseout", () => {
+                    link.style.opacity = "1";
+                });
+            });
+        });
+    </script>
+    <style>
+
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Effet de surbrillance en fondu */
+.button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.4s ease-in-out;
+}
+
+.button:hover::after {
+    left: 100%;
+}
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f2fd, #fff);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #1e88e5, #1565c0);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #1565b6;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc80;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #1565c0;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .download-button {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #1e88e5;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .download-button:hover {
+            background-color: #1565c0;
+        }
+        footer {
+            background-color: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio - Épreuve 5</h1>
+        <p>Compétences techniques démontrées lors de l'épreuve E4</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="bts.html">BTS SIO</a>
+        <a href="epreuves.html">Epreuves</a>
+        <a href="veille.html">Veille Technologique</a>
+    </nav>
+<a href="Tableau_synthèseE4.xlsx" class="download-button" download>📥 Télécharger le Tableau de compétences</a>
+
+<div class="container">
+    <div><h2>Qu'est ce que l'épreuve E4 🎓 ?</h2>
+        <p>L’épreuve E4 est une épreuve clé du BTS SIO, elle doit être composée de minimun deux projets ayant un contexte commun en rapport avec l’option choisie.
+
+            L’objectif de cette épreuve est d’évaluer le candidat sur une des deux situations professionnelles qu’il aura réalisées sur les 2 ans de formation.</p>
+    </div>
+
+    <div><h2>BTS SIO et Épreuve E5 : Préparation et Déroulement</h2>
+        <p>L'épreuve E5 du BTS SIO se divise en <strong>deux parties.</strong> Une épreuve qui te met en situation réelle, où tu dois mobiliser les compétences que tu as développées au cours de ta formation.
+            <strong>La première partie est un entretien de 15 minutes.</strong> Tu dois exposer un projet que tu as préparé. Ensuite, le jury présente des modifications à apporter à ton projet. Tu disposes de <strong>20 minutes</strong> pour les réaliser.
+            Ensuite, tu as <strong>un second entretien de 15 minutes</strong> pour présenter les modifications que tu as faites. Après cela, tu as jusqu'à une heure pour appliquer ces modifications à ton projet et produire une documentation de test.</p>
+    </div>
+    
+    <a href="exsi.html" class="button">🔧 Partie EXSI</a>
+    <a href="vm.html" class="button">🖥️ Partie VM</a>
+    <a href="dhcp.html" class="button">📡 Partie DHCP</a>
+</body>
+</html>
+
+    <footer>
+        <p>&copy; 2025 Kaveh Ostad - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

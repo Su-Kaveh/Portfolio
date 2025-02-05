@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kaveh Ostad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(link => {
+                link.addEventListener("mouseover", () => {
+                    link.style.opacity = "0.6";
+                });
+                link.addEventListener("mouseout", () => {
+                    link.style.opacity = "1";
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio - Kaveh Ostad</h1>
+        <p>Étudiant en BTS SIO (Services Informatiques aux Organisations)</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="bts.html">BTS SIO</a>
+        <a href="epreuves.html">Epreuves</a>
+        <a href="veille.html">Veille Technologique</a>
+    </nav>
+
+    <div class="container">
+        <div id="about" class="section">
+            <h2>À Propos</h2>
+            <p>Je m'appelle Kaveh Ostad, étudiant en première année de BTS SIO (Services Informatiques aux Organisations). Passionné par l'informatique et la technologie, je développe des compétences dans les domaines de la programmation, de l'administration des systèmes et réseaux, ainsi que de la gestion de projets informatiques.</p>
+            <a href="https://www.linkedin.com/in/kaveh-ostad" target="_blank" class="linkedin-button">Mon LinkedIn</a>
+        </div>
+
+        <div id="bts" class="section">
+            <h2>BTS SIO</h2>
+            <p>Le BTS SIO est une formation professionnalisante qui prépare aux métiers de l'informatique. Il se décline en deux spécialités :</p>
+            <ul>
+                <li>SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</li>
+                <li>SLAM (Solutions Logicielles et Applications Métiers)</li>
+            </ul>
+            <p>En première année, j'acquiers les bases communes aux deux spécialités, notamment en programmation, gestion de réseaux et bases de données.</p>
+        </div>
+
+        <div id="epreuve4" class="section">
+            <h2>Épreuve 4</h2>
+            <p>L'épreuve E4 consiste en l'analyse et l'interprétation des besoins au sein d'une organisation afin de proposer des solutions techniques</p>
+        </div>
+
+        <div id="epreuve5" class="section">
+            <h2>Épreuve 5</h2>
+            <p>L'épreuve E5 porte sur l'exploitation d'un système informatisé. Elle permet de démontrer mes capacités à administrer des systèmes, diagnostiquer des problèmes et proposer des solutions adaptées.</p>
+            <p> Elle porte également sur la conception, au développement, ainsi qu'au déploiement et à la maintenance des composants logiciels d'une solution applicative. Ainsi, elle permet d'établir mes compétences en conception et développement d'une solution applicative, en maintenance de celle-ci, mais aussi en bases de données, en gestion des données numériques et en gestion de version.</p>
+            
+        </div>
+
+        <div id="veille" class="section">
+            <h2>Veille Technologique</h2>
+            <p>La veille technologique est une activité essentielle pour rester à jour dans un secteur en constante évolution. Je surveille les tendances, les nouvelles technologies et les pratiques émergentes afin d'enrichir mes compétences et anticiper les besoins du marché.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kaveh Ostad - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
+

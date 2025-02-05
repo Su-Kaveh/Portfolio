@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Épreuve 6</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(link => {
+                link.addEventListener("mouseover", () => {
+                    link.style.opacity = "0.6";
+                });
+                link.addEventListener("mouseout", () => {
+                    link.style.opacity = "1";
+                });
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f2fd, #fff);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #1e88e5, #1565c0);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #1565b6;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc80;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #1565c0;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio - Épreuve 6</h1>
+        <p>Compétences techniques démontrées lors de l'épreuve E5</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="bts.html">BTS SIO</a>
+        <a href="epreuves.html">Epreuves</a>
+        <a href="veille.html">Veille Technologique</a>
+    </nav>
+    <div class="container">
+        <div id="admin_system" class="section">
+            <h2>Administration des Systèmes et Réseaux</h2>
+            <p><strong>épreuve pratique et orale (40 minutes + 1h30 de préparation)</strong></p>
+            <ul>
+                <li>Étude approfondie du modèle <strong>TCP/IP</strong>.</li>
+                <li>Principes de base et avancés de l’adressage <strong>IP</strong>.</li>
+                <li>Analyse des trames réseau à l’aide de l’outil <strong>Wireshark</strong>.</li>
+            </ul>
+        </div>
+        <div id="dev_apps" class="section">
+            <h2>Conception et Développement des Logiciels et Applications</h2>
+            <p><strong>épreuve pratique et orale (40 min + 1 h 30 de préparation)</strong></p>
+            <ul>
+                <li>Développement de sites web en <strong>HTML/CSS</strong> et <strong>JavaScript</strong>.</li>
+                <li>Conception de bases de données avec <strong>MySQL</strong>.</li>
+                <li>Programmation en <strong>Java</strong> et <strong>Python</strong>.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Kaveh Ostad - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
